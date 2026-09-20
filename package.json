@@ -1,0 +1,83 @@
+{
+  "name": "3dshaders.js",
+  "version": "1.0.0",
+  "description": "Modern shader/post-processing library for Web 3D. Supports Three.js and Babylon.js with easy-to-use effects like brightness, contrast, bloom, blur, and custom GLSL.",
+  "type": "module",
+  "main": "./src/index.js",
+  "module": "./src/index.js",
+  "exports": {
+    ".": {
+      "import": "./src/index.js",
+      "types": "./types/index.d.ts"
+    },
+    "./three": {
+      "import": "./src/three/index.js",
+      "types": "./types/three.d.ts"
+    },
+    "./babylon": {
+      "import": "./src/babylon/index.js",
+      "types": "./types/babylon.d.ts"
+    },
+    "./shaders": {
+      "import": "./src/shaders/index.js",
+      "types": "./types/shaders.d.ts"
+    }
+  },
+  "files": [
+    "src",
+    "types",
+    "LICENSE",
+    "README.md"
+  ],
+  "scripts": {
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js --passWithNoTests",
+    "lint": "eslint src --ext .js",
+    "build": "echo \"No build step required - pure ESM\"",
+    "prepublishOnly": "npm test"
+  },
+  "keywords": [
+    "shaders",
+    "glsl",
+    "webgl",
+    "post-processing",
+    "three.js",
+    "babylon.js",
+    "3d",
+    "effects",
+    "bloom",
+    "blur",
+    "vignette"
+  ],
+  "author": "gaphop123",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gaphop123/3DShaders.js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gaphop123/3DShaders.js/issues"
+  },
+  "homepage": "https://github.com/gaphop123/3DShaders.js#readme",
+  "peerDependencies": {
+    "three": ">=0.150.0",
+    "@babylonjs/core": ">=6.0.0"
+  },
+  "peerDependenciesMeta": {
+    "three": {
+      "optional": true
+    },
+    "@babylonjs/core": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "eslint": "^9.0.0",
+    "jest": "^29.7.0",
+    "three": "^0.170.0",
+    "@babylonjs/core": "^7.0.0"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "sideEffects": false
+}
