@@ -4,9 +4,7 @@
 
 Easily add brightness, contrast, saturation, blur, bloom, vignette, sharpen, grayscale, chromatic aberration and custom GLSL effects to your Three.js or Babylon.js scenes — without writing full shader pipelines yourself.
 
-[![npm version](https://img.shields.io/npm/v/3dshaders.js.svg)](https://www.npmjs.com/package/3dshaders.js)
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![CI](https://github.com/gaphop123/3DShaders.js/actions/workflows/ci.yml/badge.svg)](https://github.com/gaphop123/3DShaders.js/actions)
+
 
 ---
 
@@ -26,9 +24,6 @@ Easily add brightness, contrast, saturation, blur, bloom, vignette, sharpen, gra
 
 ## Installation
 
-```bash
-npm install 3dshaders.js
-```
 
 Peer dependencies (install the ones you use):
 
